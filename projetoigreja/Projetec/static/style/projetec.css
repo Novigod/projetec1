@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Fundo */
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)), url(/static/images/fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+/* Header */
+.header {
+    background-color: #1b1a1a;
+    box-shadow: 1px 1px 4px #1c1c1c;
+    height: 100px;
+    position: static;
+    top: 0px;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 0px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1b1a1a;
+    height: 100px;
+}
+
+.logo {
+    border-radius: 360px;
+    width: 85px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercaser;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #F9EADA;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after {
+    width: 100%;
+}
+
+
+/* Main */
+
+.main {
+    padding-top: 5em;
+    height: 100vh;
+    background-color: rgb(245, 245, 245, 0.5);
+    text-align: justify;
+    margin: 1.5% 5% 1.5% 5%;
+    border: solid rgb(245, 245, 245);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    position: static;
+    left: 0;
+    right: 0;
+    border-top: 1px solid #1b1a1a;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #1b1a1a;
+    color: white;
+    width: 100%;
+    bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        font-size: small;
+    }
+
+    .navbar {
+        font-size: small;
+    }
+}
+
+/* conteudo div pagina home */
+.div_conteudo {
+    margin-bottom: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(#1b1a1a, #24282dea);
+    width: 70%;
+    margin: auto;
+    height: 70%;
+    border: 1px solid #1b1a1a;
+    position: relative;
+    top: 5%;
+    color: white;
+    border: 1px solid black;
+}
+
+.div_conteudo h1 {
+    color: #fff;
+    font-size: 3vw;
+    overflow: hidden;
+    text-align: center;
+}
+
+.logo_conteudo {
+    width: 28%;
+    height: 18%;
+    width: auto;
+    height: auto;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100%;
+    padding: 20px;
+}
+
+.div_conteudo {
+    display: block;
+    overflow: hidden;
+}
+
+
+.div_conteudo p {
+    padding: 10px;
+    text-align: justify;
+}
+
+.centerlize {
+    margin: 0 auto;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.aligner {
+    color: whitesmoke;
+    margin-left: 150px;
+}
+
+
+.carousel {
+    display: block;
+    overflow: hidden;
+    height: 400px;
+    width: 500px;
+    margin: 0 auto !important;
+}
+
+.container {
+    height: 400px;
+    width: 400px;
+    display: flex;
+    transition: transform 0.5s linear;
+    transform: translateX(0);
+}
+
+.img {
+    object-fit: cover;
+    width: max-content;
+    height: 100%;
+    border-radius: 10px;
+}
+
+progress,
+::-webkit-progress-value {
+    width: 500px;
+    height: 20px;
+    background: linear-gradient(to right, red, rgb(23, 131, 9));
+}
+
+#deus>* {
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: #1b1a1a;
+    box-shadow: 1px 1px 4px #1c1c1c;
+    width: 800px;
+    height: 240px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+#qsBox {
+    display: flex;
+    justify-content: center;
+}
